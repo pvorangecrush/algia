@@ -104,7 +104,8 @@ func doPost(cCtx *cli.Context) error {
 
 	for _, entry := range extractTags(ev.Content) {
 		ev.Tags = ev.Tags.AppendUnique(nostr.Tag{"t", entry.text})
-
+        }
+	
 	ev.CreatedAt = nostr.Now()
 	if articleName != "" {
 		ev.Kind = nostr.KindArticle
