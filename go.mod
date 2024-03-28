@@ -1,4 +1,4 @@
-module github.com/pvorangecrush/algia
+module github.com/mattn/algia
 
 go 1.21
 
